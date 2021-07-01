@@ -1,0 +1,32 @@
+{
+    "name": "splitwise-js-map",
+    "version": "1.0.0",
+    "description": "Minimize Cash Flow among a given set of friends who have borrowed money from each other. Given a number of friends who have to give or take some amount of money from one another. Design an algorithm by which the total cash flow among all the friends is minimized.",
+    "main": "index.js",
+    "scripts": {
+      "test": "node test"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/ahtrahdis7/splitwise.git"
+    },
+    "dependencies": {
+    },
+    "keywords": [
+      "splitwise",
+      "javascript",
+      "algorithm",
+      "Javascript",
+      "split-wise",
+      "split-wize",
+      "splitwize",
+      "split"
+    ],
+    "author": "Sidhartha Mallick",
+    "license": "ISC",
+    "bugs": {
+      "url": "https://github.com/ahtrahdis7/splitwise/issues"
+    },
+    "homepage": "https://github.com/ahtrahdis7/splitwise#readme"
+  }
+  
