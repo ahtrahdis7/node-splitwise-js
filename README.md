@@ -20,25 +20,21 @@ const Splitwise = require('splitwise-js-map');
 
 var input = [    
     {   
-      'paidBy': 'Srikant',  
-      'paidFor': { 'Sakshi': 300, 'Tiwari': 40, 'Rashmika': 30 } 
+      'paidBy': 'A',  
+      'paidFor': { 'B': 300, 'C': 40, 'D': 30 } 
     },
     {   
-      'paidBy': 'Sakshi',  
-      'paidFor': { 'Rashmika': 50 } 
+      'paidBy': 'B',  
+      'paidFor': { 'A': 50, 'B': 100, 'C': 200 } 
     }	
   ]
 
 const splits = Splitwise(input);
 console.log(splits);
 </pre>
-Output:
+Output: [ `from`, `to` , `value`]
 <pre>
-[
-  'Sakshi owes Srikant 250',
-  'Rashmika owes Srikant 80',
-  'Tiwari owes Srikant 40'
-]
+[ [ 'C', 'A', 240 ], [ 'B', 'A', 50 ], [ 'D', 'A', 30 ] ]
 </pre>
 
 ### Updates :

@@ -24,9 +24,9 @@ function simplifyDebts(transactions){
                 if(!vis.has(tr2) && tr1 != tr2){
                     if(transaction_map.get(tr2) == -transaction_map.get(tr1)){
                         if(transaction_map.get(tr2) > transaction_map.get(tr1)){
-                            splits.push(`${tr1} owes ${tr2} ${transaction_map.get(tr2)}`)
+                            splits.push([tr1, tr2, transaction_map.get(tr2)])
                         }else{
-                            splits.push(`${tr2} owes ${tr1} ${transaction_map.get(tr1)}`)
+                            splits.push([tr2, tr1, transaction_map.get(tr1)])
                         }
                         transaction_map.set(tr2, 0)
                         transaction_map.set(tr1, 0)
@@ -59,7 +59,7 @@ function simplifyDebts(transactions){
         transaction_map.set(minMax[0], transaction_map.get(minMax[0]) + min_value);
         transaction_map.set(minMax[1], transaction_map.get(minMax[1]) - min_value);
   
-        let res = `${minMax[0]} owes ${minMax[1]} ${min_value}`;
+        let res = [minMax[0], minMax[1], min_value];
         splits.push(res);
         helper();    
     }
