@@ -56,16 +56,15 @@ function simplifyDebts(transactions){
         if(minMax[0] == undefined || minMax[1] == undefined) return;
         let min_value = Math.min(-transaction_map.get(minMax[0]), transaction_map.get(minMax[1]));
 
-        if(min_value === 0) {
-            return;
+        const isZero = min_value === 0;
+        if(!isZero) {
+            transaction_map.set(minMax[0], transaction_map.get(minMax[0]) + min_value);
+            transaction_map.set(minMax[1], transaction_map.get(minMax[1]) - min_value);
+
+            let res = [minMax[0], minMax[1], min_value];
+            splits.push(res);
+            helper();
         }
-  
-        transaction_map.set(minMax[0], transaction_map.get(minMax[0]) + min_value);
-        transaction_map.set(minMax[1], transaction_map.get(minMax[1]) - min_value);
-  
-        let res = [minMax[0], minMax[1], min_value];
-        splits.push(res);
-        helper();    
     }
 
     settleSimilarFigures();

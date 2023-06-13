@@ -1,4 +1,4 @@
-import {doTheTest, SplitwiseInputItem} from "./test_utils";
+import {checkBalance, SplitwiseInputItem} from "./test_utils";
 
 // @ts-ignore
 const Splitwise = require('./index');
@@ -16,7 +16,7 @@ let input: SplitwiseInputItem[] = [
     }
 ];
 splits = Splitwise(input);
-doTheTest(splits, input);
+checkBalance(splits, input);
 console.log(splits);
 
 
@@ -38,5 +38,5 @@ input = [
     }
 ];
 splits = Splitwise(input);
-doTheTest(splits, input);
+checkBalance(splits, input);
 console.log(splits);

@@ -1,35 +1,35 @@
 {
-    "name": "splitwise-js-map",
-    "version": "1.0.3",
-    "description": "Minimize Cash Flow among a given set of friends who have borrowed money from each other. Given a number of friends who have to give or take some amount of money from one another. Design an algorithm by which the total cash flow among all the friends is minimized.",
-    "main": "index.js",
-    "scripts": {
-        "build": "npx tsc",
-        "test": "node test",
-        "test-ts": "npx ts-node test.ts"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/ahtrahdis7/splitwise.git"
-    },
-    "keywords": [
-        "splitwise",
-        "javascript",
-        "algorithm",
-        "Javascript",
-        "split-wise",
-        "split-wize",
-        "splitwize",
-        "split"
-    ],
-    "author": "Sidhartha Mallick",
-    "license": "ISC",
-    "bugs": {
-        "url": "https://github.com/ahtrahdis7/splitwise/issues"
-    },
-    "homepage": "https://github.com/ahtrahdis7/splitwise#readme",
-    "devDependencies": {
-        "ts-node": "^10.9.1",
-        "typescript": "^5.1.3"
-    }
+  "name": "splitwise-js-map",
+  "version": "1.0.3",
+  "description": "Minimize Cash Flow among a given set of friends who have borrowed money from each other. Given a number of friends who have to give or take some amount of money from one another. Design an algorithm by which the total cash flow among all the friends is minimized.",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx tsc",
+    "test": "npm run build && node test",
+    "test-ts": "npm run build && npx ts-node test.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ahtrahdis7/node-splitwise-js.git"
+  },
+  "keywords": [
+    "splitwise",
+    "javascript",
+    "algorithm",
+    "Javascript",
+    "split-wise",
+    "split-wize",
+    "splitwize",
+    "split"
+  ],
+  "author": "Sidhartha Mallick",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ahtrahdis7/node-splitwise-js/issues"
+  },
+  "homepage": "https://github.com/ahtrahdis7/node-splitwise-js#readme",
+  "devDependencies": {
+    "ts-node": "^10.9.1",
+    "typescript": "^5.1.3"
+  }
 }
